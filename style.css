@@ -1,0 +1,46 @@
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 75px;
+}
+
+.header__menu-item-settings {
+  text-decoration: none;
+  font-weight: 400;
+  color: #000;
+  font-size: 16px;
+}
+
+.header__icons {
+  display: flex;
+  column-gap: 45px;
+}
+
+/* скрываем чекбокс */
+#menu__toggle {
+  opacity: 0%;
+}
+
+/* Hide hamburger menu when checkbox is checked */
+#menu__toggle:checked~.hamburger-menu {
+  display: none;
+}

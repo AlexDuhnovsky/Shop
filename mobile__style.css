@@ -1,0 +1,80 @@
+@media (max-width: 1050px) {
+  .header__menu {
+    column-gap: 50px;
+  }
+
+  .header__icons {
+    column-gap: 30px;
+
+  }
+}
+
+@media (max-width: 920px) {
+  .header__menu {
+    column-gap: 25px;
+  }
+
+  .header__icons {
+    column-gap: 15px;
+
+  }
+
+}
+
+@media (min-width: 767px) {
+
+  .hamburger-menu,
+  .menu__background,
+  .menu__btn {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 766px) {
+  .header__menu {
+    display: none;
+  }
+
+
+  .hamburger-menu {
+    display: flex;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+  }
+
+  /* стилизуем кнопку */
+  .menu__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    border: 1px solid black;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 30;
+  }
+
+  /* добавляем "гамбургер" */
+  .menu__btn>.menu__btn-inner,
+  .menu__btn>.menu__btn-inner::before,
+  .menu__btn>.menu__btn-inner::after {
+    display: block;
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background-color: black;
+  }
+
+  .menu__btn>.menu__btn-inner::before {
+    content: '';
+    top: -8px;
+  }
+
+  .menu__btn>.menu__btn-inner::after {
+    content: '';
+    top: 8px;
+  }
+}
